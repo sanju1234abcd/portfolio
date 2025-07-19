@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+.hero {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+  height: 100vh;
+  position: relative;
+}
+
+.intro1 {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: #aaa;
+  z-index: 3;
+  position: relative;
+}
+
+.text-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+  font-size: 6vw;
+  font-weight: 300;
+  height: 70vh;
+  padding-top: 15vh;
+}
+
+.top-text {
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+
+.hero-img {
+  position: absolute;
+  top: 65vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  height: 65vh;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.bottom-text {
+  font-family: 'Arial','sans-serif';
+  position: relative;
+  z-index: 1;
+  width: 80vw;
+  height: fit-content;
+  text-align: start;
+}
+
+.outline {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+.loc{
+  font-size: 1.6rem;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+}
+
+.cta-buttons {
+  position: absolute; 
+  bottom: 5%; 
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+  z-index: 3;
+}
+
+.cta-buttons button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-buttons button:last-child{
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid white;
+    color: whitesmoke;
+}
+
+.cta-buttons button:hover {
+  background-color: #ddd;
+}
+
+.cta-buttons button:last-child:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+
+.light-text-hero{
+  color: black;
+}
+.light-text-hero-outline{
+  -webkit-text-stroke: 1px black;
+}
+
+@media (max-width:1000px) {
+  .loc{
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+    .top-text,.bottom-text{
+        font-size: 3rem;
+        text-align: center;
+    }
+  .text-wrapper {
+    font-size: 10vw;
+  }
+
+  .hero-img {
+    width: 200px;
+  }
+
+  .loc{
+    font-size: 0.7rem;
+    top: 50%;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .intro1{
+    font-size: 1rem;
+  }
+}
