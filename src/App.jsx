@@ -350,7 +350,7 @@ const skills = [
       </section>
         
       <section className="contact section" >
-        <h2>Contact me 11</h2>
+        <h2>Contact me </h2>
         <p style={{color:`${dark ? '' : 'black'}`}}>Let's connect on any of the platforms below</p>
         <div>
 <ul className="example-2">
